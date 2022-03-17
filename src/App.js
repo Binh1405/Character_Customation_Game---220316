@@ -35,9 +35,11 @@ function App() {
     setClothing2(Math.floor(Math.random() * total.clothing2));
     setClothing3(Math.floor(Math.random() * total.clothing3));
   };
+
   useEffect(() => {
     randomize();
   }, []);
+  console.log("body", body);
   return (
     <div className="App">
       <div className="title">CHARACTER</div>
@@ -51,7 +53,7 @@ function App() {
               eyes={eyes}
               hair={hair}
               mouth={mouth}
-              eyebrow={eyebrows}
+              eyebrows={eyebrows}
               glasses={glasses}
               clothing1={clothing1}
               clothing2={clothing2}
@@ -114,7 +116,7 @@ function App() {
             <h2>Glasses</h2>
             <Partlist
               total={total.glasses}
-              path="glasses"
+              path="accessorries/glasses"
               set={setGlasses}
               selected={glasses}
             />
@@ -123,7 +125,7 @@ function App() {
             <h2>Clothing (L1)</h2>
             <Partlist
               total={total.clothing1}
-              path="clothing1"
+              path="clothes/layer_1"
               set={setClothing1}
               selected={clothing1}
             />
@@ -132,7 +134,7 @@ function App() {
             <h2>Clothing(L2)</h2>
             <Partlist
               total={total.clothing2}
-              path="clothing2"
+              path="clothes/layer_2"
               set={setClothing2}
               selected={clothing2}
             />
@@ -141,7 +143,7 @@ function App() {
             <h2>Clothing(L3)</h2>
             <Partlist
               total={total.clothing3}
-              path="clothing3"
+              path="clothes/layer_3"
               set={setClothing3}
               selected={clothing3}
             />
