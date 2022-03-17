@@ -8,8 +8,8 @@ const Part = ({ path, index, zIndex }) => {
     <img
       src={`../character/${path}/${index + 1}.png`}
       alt=""
-      width={260}
-      style={{ zIndex, position: "absolute", left: 0, top: 0 }}
+      width={200}
+      style={{ zIndex, position: "absolute", left: "13%", top: "0" }}
     />
   );
 };

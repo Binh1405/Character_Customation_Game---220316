@@ -116,7 +116,7 @@ function App() {
             <h2>Glasses</h2>
             <Partlist
               total={total.glasses}
-              path="accessorries/glasses"
+              path="accessories/glasses"
               set={setGlasses}
               selected={glasses}
             />

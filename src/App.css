@@ -69,6 +69,8 @@ h2 {
   position: sticky;
   background-color: #fff;
   top: calc(50% - 205px);
+  min-width: 300px;
+  min-height: 300px;
 }
 
 .clickable {
@@ -133,12 +135,15 @@ h2 {
   border: none;
   border-radius: 15px;
   padding: 10px;
-  margin: 0 10px;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
   transition-duration: 0.2s;
+  position: absolute;
+  bottom: 0;
+  left: 31%;
+  margin-bottom: 5px;
 }
 
 .button:hover {
